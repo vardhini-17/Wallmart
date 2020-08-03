@@ -41,17 +41,16 @@ else{
   <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
   <title>GAREWARD</title>
     <link href='https://fonts.googleapis.com/css?family=Vibur' rel='stylesheet' type='text/css'>
-  <!-- Favicons -->
+ 
   <link href="img/favicon.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
     <link href='https://fonts.googleapis.com/css?family=Vibur' rel='stylesheet' type='text/css'>
-  <!-- Bootstrap core CSS -->
+  
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!--external css-->
+  
   <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="css/zabuto_calendar.css">
   <link rel="stylesheet" type="text/css" href="lib/gritter/css/jquery.gritter.css" />
-  <!-- Custom styles for this template -->
   <link href="css/bronzestyle.css" rel="stylesheet">
   <link href="css/style-responsive.css" rel="stylesheet">
   
@@ -69,18 +68,18 @@ else{
 <body style="background:url(img/bronzebg.jpg) no-repeat;background-size:100%">
   <section id="container">
     
-    <!--header start-->
+    
     <header class="header black-bg">
       <div class="sidebar-toggle-box">
         
       </div>
-      <!--logo start-->
+      
       <a href="index.php" class="logo"> <b><span>G</span><span>ar</span><span>ew</span><span>a</span><span>rd</span></b></a>
-      <!--logo end-->
+      
       <div class="nav notify-row" >
-        <!--  notification start -->
+        
         <ul class="nav top-menu">
-          <!-- settings start -->
+          
 <?php  
 $bio="bio";
 $bio.=$username;
@@ -173,8 +172,7 @@ $resultstatus=mysqli_query($conn,$status);
               </li>
             </ul>
           </li>
-          <!-- inbox dropdown end -->
-          <!-- notification dropdown start-->
+          
           <li id="header_notification_bar" class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="index.php#">
               <i class="fa fa-bell-o"></i>
@@ -218,9 +216,9 @@ $resultstatus=mysqli_query($conn,$status);
               </li>
             </ul>
           </li>
-          <!-- notification dropdown end -->
+          
         </ul>
-        <!--  notification end -->
+       
       </div>
       <div class="top-menu">
         <ul class="nav pull-right top-menu">
@@ -230,11 +228,7 @@ $resultstatus=mysqli_query($conn,$status);
 
         
     </header>
-    <!--header end-->
-    <!-- **********************************************************************************************************************************************************
-        MAIN SIDEBAR MENU
-        *********************************************************************************************************************************************************** -->
-    <!--sidebar start-->
+    
      <?php $a="SELECT image FROM gp WHERE email='$email'";
 $result = mysqli_query($conn,$a);
 $b="SELECT MAX(id) AS maximum FROM hello1";
@@ -244,33 +238,14 @@ $maximum=$row1['maximum'];
      ?> 
     <aside>
       
-    <!--sidebar end-->
-    <!-- **********************************************************************************************************************************************************
-        MAIN CONTENT
-        *********************************************************************************************************************************************************** -->
-    <!--main content start-->
+    
     <section id="main-content">
       <section class="wrapper">
         <div class="row" style="margin-left:-50px;">
           <div class="col-lg-9 main-chart" style="width:100%;">
               
               
-                    <!-- SECTION BANNER ICON -->
                     
-                    
-                    <!-- /SECTION BANNER ICON -->
-                
-                    <!-- SECTION BANNER TITLE -->
-                    
-                    <!-- /SECTION BANNER TITLE -->
-                
-                    <!-- SECTION BANNER TEXT -->
-                    
-                    <!-- /SECTION BANNER TEXT -->
-                  
-                            
-                      <!-- /col-md-4 -->
-                            <!-- /col-md-4 -->
                             <?php
                             $p="SELECT Points FROM gp WHERE email='$email'";
                             $check=mysqli_query($conn,$p);
@@ -443,15 +418,14 @@ while($rowk = $resultk->fetch_assoc()){
         <div class="rowcol-lg-9 main-chart">
 
 </div>
-        <!-- /row -->
+       
       </section>
     </section>
-    <!--main content end-->
-    <!--footer start-->
     
-    <!--footer end-->
+    
+    
   </section>
-  <!-- js placed at the end of the document so the pages load faster -->
+  
   <script src="lib/jquery/jquery.min.js"></script>
 
   <script src="lib/bootstrap/js/bootstrap.min.js"></script>
@@ -459,11 +433,11 @@ while($rowk = $resultk->fetch_assoc()){
   <script src="lib/jquery.scrollTo.min.js"></script>
   <script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
   <script src="lib/jquery.sparkline.js"></script>
-  <!--common script for all pages-->
+  
   <script src="lib/common-scripts.js"></script>
   <script type="text/javascript" src="lib/gritter/js/jquery.gritter.js"></script>
   <script type="text/javascript" src="lib/gritter-conf.js"></script>
-  <!--script for this page-->
+  
   <script src="vendors/aos/js/aos.js">
   <script src="lib/sparkline-chart.js"></script>
   <script src="lib/zabuto_calendar.js"></script>
@@ -471,17 +445,17 @@ while($rowk = $resultk->fetch_assoc()){
       
     $(document).ready(function() {
       var unique_id = $.gritter.add({
-        // (string | mandatory) the heading of the notification
+        
         title: 'Hi <?php echo $_SESSION['key'] ?>',
-        // (string | mandatory) the text inside the notification
+        
         text: 'Hover me to enable the Close Button. You can hide the left sidebar clicking on the button next to the logo.',
-        // (string | optional) the image to display on the left
+        
         image: '../images/shopping2.png',
-        // (bool | optional) if you want it to fade out on its own or just sit there
+        
         sticky: false,
-        // (int | optional) the time you want it to be alive for before fading out
+        
         time: 8000,
-        // (string | optional) the class name you want to apply to that specific message
+        
         class_name: 'my-sticky-class'
       });
         
@@ -556,7 +530,7 @@ while($rowk = $resultk->fetch_assoc()){
    url:"notification.php",
    method:"POST",
    data:{view:view},
-   //dataType:'json',
+   
    success:function(data)
    {
      var obj = jQuery.parseJSON(data);
