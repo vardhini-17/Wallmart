@@ -232,11 +232,7 @@ $resultstatus=mysqli_query($conn,$status);
 
         
     </header>
-    <!--header end-->
-    <!-- **********************************************************************************************************************************************************
-        MAIN SIDEBAR MENU
-        *********************************************************************************************************************************************************** -->
-    <!--sidebar start-->
+   
      <?php $a="SELECT image FROM gp WHERE email='$email'";
 $result = mysqli_query($conn,$a);
 $b="SELECT MAX(id) AS maximum FROM hello1";
@@ -246,29 +242,14 @@ $maximum=$row1['maximum'];
      ?> 
     <aside>
       
-    <!--sidebar end-->
-    <!-- **********************************************************************************************************************************************************
-        MAIN CONTENT
-        *********************************************************************************************************************************************************** -->
-    <!--main content start-->
+   
     <section id="main-content" style="margin-left:10px;">
       <section class="wrapper">
         <div class="row">
           <div class="col-lg-9 main-chart" style="width:100%;">
               
               
-                    <!-- SECTION BANNER ICON -->
                     
-                    
-                    <!-- /SECTION BANNER ICON -->
-                
-                    <!-- SECTION BANNER TITLE -->
-                    
-                    <!-- /SECTION BANNER TITLE -->
-                
-                    <!-- SECTION BANNER TEXT -->
-                    
-                    <!-- /SECTION BANNER TEXT -->
                   
                             <?php $a=1;
                             $p="SELECT Points FROM gp WHERE email='$email'";
@@ -276,8 +257,7 @@ $maximum=$row1['maximum'];
                             $rowcheck=mysqli_fetch_assoc($check);
                             $acheck1=$rowcheck['Points']; 
                             ?>
-                      <!-- /col-md-4 -->
-                            <!-- /col-md-4 -->
+                      
                   <div class="row mt" style="width:100%;position:relative;display:inline-block;background-color:transparent;margin-bottom:25px;">
                 <?php if($acheck1>=8000){?>
                 <img src="img/offer.gif" style="width:100%;"data-toggle="modal" data-target="#ad1"/><?php } else { ?>
@@ -315,12 +295,10 @@ $maximum=$row1['maximum'];
       </section>
     </section>
       </aside>
-    </section><!--main content end-->
-    <!--footer start-->
+    </section>
     
-    <!--footer end-->
 
-  <!-- js placed at the end of the document so the pages load faster -->
+  
   <script src="lib/jquery/jquery.min.js"></script>
 
   <script src="lib/bootstrap/js/bootstrap.min.js"></script>
@@ -328,11 +306,11 @@ $maximum=$row1['maximum'];
   <script src="lib/jquery.scrollTo.min.js"></script>
   <script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
   <script src="lib/jquery.sparkline.js"></script>
-  <!--common script for all pages-->
+  
   <script src="lib/common-scripts.js"></script>
   <script type="text/javascript" src="lib/gritter/js/jquery.gritter.js"></script>
   <script type="text/javascript" src="lib/gritter-conf.js"></script>
-  <!--script for this page-->
+  
   <script src="vendors/aos/js/aos.js">
   <script src="lib/sparkline-chart.js"></script>
   <script src="lib/zabuto_calendar.js"></script>
@@ -340,17 +318,17 @@ $maximum=$row1['maximum'];
       
     $(document).ready(function() {
       var unique_id = $.gritter.add({
-        // (string | mandatory) the heading of the notification
+        
         title: 'Hi <?php echo $_SESSION['key'] ?>',
-        // (string | mandatory) the text inside the notification
+        
         text: 'Hover me to enable the Close Button. You can hide the left sidebar clicking on the button next to the logo.',
-        // (string | optional) the image to display on the left
+        
         image: '../images/shopping2.png',
-        // (bool | optional) if you want it to fade out on its own or just sit there
+        
         sticky: false,
-        // (int | optional) the time you want it to be alive for before fading out
+        
         time: 8000,
-        // (string | optional) the class name you want to apply to that specific message
+        
         class_name: 'my-sticky-class'
       });
         
@@ -425,11 +403,11 @@ $maximum=$row1['maximum'];
    url:"notification.php",
    method:"POST",
    data:{view:view},
-   //dataType:'json',
+  
    success:function(data)
    {
      var obj = jQuery.parseJSON(data);
-    //alert(obj.unseen_notification);
+    
     $('.hi1').html(obj.notification);
     if(obj.unseen_notification > 0)
     {
@@ -461,7 +439,7 @@ AOS.init({
       
       
   </script>
-  <!-- ad1 modal-->
+  
 <div class="modal fade" id="ad1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content" style="background:#fff;">
@@ -480,7 +458,7 @@ AOS.init({
           </div>
         </div>
       </div>
-    <!-- ad2 modal-->
+    
 <div class="modal fade" id="ad2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content" style="background:#fff;">
@@ -499,7 +477,7 @@ AOS.init({
           </div>
         </div>
       </div>
-    <!-- ad3 modal-->
+    
 <div class="modal fade" id="ad3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content" style="background:#fff;">
@@ -537,7 +515,7 @@ AOS.init({
           </div>
         </div>
       </div>
-    <!-- ad5 modal-->
+    
 <div class="modal fade" id="ad5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content" style="background:#fff;">
@@ -594,7 +572,7 @@ AOS.init({
           </div>
         </div>
       </div>
-    <!-- ad8 modal-->
+    
 <div class="modal fade" id="ad8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content" style="background:#fff;">
@@ -615,7 +593,7 @@ AOS.init({
         </div>
       </div>
       
-    <!-- ads locked modal starts-->
+    
     <div class="modal fade" id="adl">
         <div class="modal-dialog" role="document">
           <div class="modal-content" style="background:#7e36a4;">
