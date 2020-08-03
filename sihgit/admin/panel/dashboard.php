@@ -40,23 +40,22 @@ else{
     Admin panel
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-  <!--     Fonts and icons     -->
+  
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-  <!-- Nucleo Icons -->
+ 
   <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
-  <!-- CSS Files -->
+
   <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
   <link href="../assets/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
-  <!-- CSS Just for demo purpose, don't include it in your project -->
+  
   <link href="../assets/demo/demo.css" rel="stylesheet" />
   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
   
   <script>
 window.onload = function () {
 var chart = new CanvasJS.Chart("chartContainer", {
-	animationEnabled: true,
-    //theme: "dark1", // "light1", "light2", "dark1", "dark2"
+        animationEnabled: true,
     backgroundColor: "transparent",
 	title: {
 		text: "Last 10 days usage"
@@ -77,7 +76,6 @@ var chart = new CanvasJS.Chart("chartContainer", {
 });
 var chart1 = new CanvasJS.Chart("chartContainer1", {
 	animationEnabled: true,
-    //theme: "dark1", // "light1", "light2", "dark1", "dark2"
     backgroundColor: "transparent",
 	title: {
 		text: "Last 10 days usage"
@@ -98,7 +96,6 @@ var chart1 = new CanvasJS.Chart("chartContainer1", {
 });
 var chart2 = new CanvasJS.Chart("chartContainer2", {
 	animationEnabled: true,
-    //theme: "dark1", // "light1", "light2", "dark1", "dark2"
     backgroundColor: "transparent",
 	title: {
 		text: "Last 10 days usage"
@@ -129,17 +126,14 @@ chart2.render();
 <body class=" ">
   <div class="wrapper ">
     <div class="sidebar">
-      <!--
-        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
-    -->
       <div class="sidebar-wrapper">
         <div class="logo">
-          <a href="http://www.creative-tim.com" class="simple-text logo-mini">
+     
             
-          </a>
-          <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+     
+      
             Gareward
-          </a>
+         
         </div>
         <ul class="nav">
           <li class="active ">
@@ -188,26 +182,11 @@ chart2.render();
           <div class="collapse navbar-collapse" id="navigation">
             <ul class="navbar-nav ml-auto ">
               <div class="search-bar input-group">
-                <!-- <input type="text" class="form-control" placeholder="Search...">
-      <div class="input-group-addon"><i class="tim-icons icon-zoom-split"></i></div> -->
+            
                 <button class="btn btn-link" id="search-button" data-toggle="modal" data-target="#searchModal"><i class="tim-icons icon-zoom-split"></i></button>
-                <!-- You can choose types of search input -->
+               
               </div>
-              <!-- <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="SEARCH">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <i class="tim-icons icon-simple-remove"></i>
-          </button>
-        </div>
-
-        <div class="modal-footer">
-        </div>
-      </div>
-    </div>
-  </div> -->
+    
               <li class="dropdown nav-idas">
                 <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
                   <div class="notification d-none d-lg-block d-xl-block"></div>
@@ -276,7 +255,7 @@ chart2.render();
           </div>
         </div>
       </div>
-      <!-- End Navbar -->
+      
       <div class="content">
         <div class="row">
           <div class="col-12">
@@ -382,10 +361,8 @@ chart2.render();
             <span class="color-label">DARK MODE</span>
           </li>
           <li class="button-container">
-            <a href="https://www.creative-tim.com/product/black-dashboard" target="_blank" class="btn btn-primary btn-block btn-round">Download Now</a>
-            <a href="https://demos.creative-tim.com/black-dashboard/docs/1.0/getting-started/introduction.html" target="_blank" class="btn btn-default btn-block btn-round">
-              Documentation
-            </a>
+            
+           
           </li>
           <li class="header-title">Thank you for 95 shares!</li>
           <li class="button-container text-center">
@@ -410,10 +387,9 @@ chart2.render();
     <script src="../assets/js/plugins/chartjs.min.js"></script>
     <!--  Notifications Plugin    -->
     <script src="../assets/js/plugins/bootstrap-notify.js"></script>
-    <!-- Control Center for Black Dashboard: parallax effects, scripts for the example pages etc -->
+    
     <script src="../assets/js/black-dashboard.min.js?v=1.0.0" type="text/javascript"></script>
-    <!-- Black Dashboard DEMO methods, don't include it in your project! -->
-   
+    
     <script src="../assets/demo/demo.js"></script>
     <script>
       $(document).ready(function() {
@@ -434,7 +410,7 @@ chart2.render();
 
 
           $('.fixed-plugin a').click(function(event) {
-            // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
+            
             if ($(this).hasClass('switch-trigger')) {
               if (event.stopPropagation) {
                 event.stopPropagation();
