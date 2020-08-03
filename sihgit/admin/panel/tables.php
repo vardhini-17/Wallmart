@@ -22,30 +22,28 @@ else{
      Dashboard 
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-  <!--     Fonts and icons     -->
+  
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-  <!-- Nucleo Icons -->
+  
   <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
-  <!-- CSS Files -->
+ 
   <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
   <link href="../assets/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
-  <!-- CSS Just for demo purpose, don't include it in your project -->
+
   <link href="../assets/demo/demo.css" rel="stylesheet" />
 </head>
 
 <body class=" ">
   <div class="wrapper ">
     <div class="sidebar">
-      <!--
-        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
-    -->
+      
       <div class="sidebar-wrapper">
         <div class="logo">
-          <a href="http://www.creative-tim.com" class="simple-text logo-mini">
+          
             G
-          </a>
-          <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+          
+
             GAREWARD
           </a>
         </div>
@@ -76,7 +74,7 @@ else{
       </div>
     </div>
     <div class="main-panel">
-      <!-- Navbar -->
+     
       <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent   ">
         <div class="container-fluid">
           <div class="navbar-wrapper">
@@ -97,26 +95,11 @@ else{
           <div class="collapse navbar-collapse" id="navigation">
             <ul class="navbar-nav ml-auto ">
               <div class="search-bar input-group">
-                <!-- <input type="text" class="form-control" placeholder="Search...">
-      <div class="input-group-addon"><i class="tim-icons icon-zoom-split"></i></div> -->
+                
                 <button class="btn btn-link" id="search-button" data-toggle="modal" data-target="#searchModal"><i class="tim-icons icon-zoom-split"></i></button>
-                <!-- You can choose types of search input -->
+              
               </div>
-              <!-- <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="SEARCH">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <i class="tim-icons icon-simple-remove"></i>
-          </button>
-        </div>
-
-        <div class="modal-footer">
-        </div>
-      </div>
-    </div>
-  </div> -->
+              
               <li class="dropdown nav-item">
                 <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
                   <div class="notification d-none d-lg-block d-xl-block"></div>
@@ -185,7 +168,7 @@ else{
           </div>
         </div>
       </div>
-      <!-- End Navbar -->
+     
       <div class="content">
         <div class="row">
           <div class="col-md-12">
@@ -277,20 +260,20 @@ else{
         </ul>
       </div>
     </div>
-    <!--   Core JS Files   -->
+    
     <script src="../assets/js/core/jquery.min.js"></script>
     <script src="../assets/js/core/popper.min.js"></script>
     <script src="../assets/js/core/bootstrap.min.js"></script>
     <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-    <!--  Google Maps Plugin    -->
+    
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-    <!-- Chart JS -->
+  
     <script src="../assets/js/plugins/chartjs.min.js"></script>
-    <!--  Notifications Plugin    -->
+    
     <script src="../assets/js/plugins/bootstrap-notify.js"></script>
-    <!-- Control Center for Black Dashboard: parallax effects, scripts for the example pages etc -->
+    
     <script src="../assets/js/black-dashboard.min.js?v=1.0.0" type="text/javascript"></script>
-    <!-- Black Dashboard DEMO methods, don't include it in your project! -->
+    
     <script src="../assets/demo/demo.js"></script>
     <script>
       $(document).ready(function() {
@@ -311,7 +294,7 @@ else{
 
 
           $('.fixed-plugin a').click(function(event) {
-            // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
+        
             if ($(this).hasClass('switch-trigger')) {
               if (event.stopPropagation) {
                 event.stopPropagation();
@@ -362,7 +345,7 @@ else{
               window.dispatchEvent(new Event('resize'));
             }, 180);
 
-            // we stop the simulation of Window Resize after the animations are completed
+            
             setTimeout(function() {
               clearInterval(simulateWindowResize);
             }, 1000);
